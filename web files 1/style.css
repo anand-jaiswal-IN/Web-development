@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Muli', sans-serif;
+}
+/*line style*/
+.line {
+    height: 5px;
+    width: 200px;
+    background: #ffbd69;
+}
+/*navigation*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111d5e;
+    padding: 10px 0;
+    font-family: 'Muli', sans-serif;
+    animation: nav 0.5s 1 0s linear;
+}
+/*navigation menu*/
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fef6fb;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    margin: 0 30px;
+    transition: 0.4s ease-in-out;
+}
+.active,
+.navigation ul li a:hover {
+    border-bottom: 1px solid #fef6fb;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fef6fb;
+    animation: header 0.5s 1 0s linear;
+}
+.header-content {
+    padding: 30vh 0;
+    text-align: center;
+}
+.header-content p {
+    padding: 0 20px;
+}
+.header-btn a {
+    margin: 0 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: #fef6fb;
+    border: 1px solid #fef6fb;
+    border-radius: 40px;
+    transition: 0.4s ease-in-out;
+}
+.header-btn a:hover {
+    color: black;
+    background: #fef6fb;
+}
+/*about application section*/
+#about-application {
+    padding: 30px;
+    background: #da2d2d;
+    color: #fef6fb;
+}
+.about-application-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-application-item {
+    width: 33.33%;
+    height: auto;
+    border: 1px solid white;
+    padding: 20px;
+}
+.about-application-item a {
+    text-decoration: none;
+    color: #fef6fb;
+    padding: 10px;
+    border: 1px solid #fef6fb;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+.about-application-item a:hover {
+    background: #fef6fb;
+    color: black;
+}
+/*services section*/
+#services {
+    padding: 30px;
+    text-align: center;
+}
+/* .services-container */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.servcies-item {
+    width: 31%;
+    background: #eaeaea;
+    padding: 30px 20px;
+    line-height: 30px;
+    margin: 5px;
+    transition: 0.4s ease-in-out;
+}
+.servcies-item:hover {
+    box-shadow: 1px 0.5px 10px 1px #364f6b;
+}
+.servcies-item a {
+    text-decoration: none;
+    padding: 10px;
+    color: #364f6b;
+    border: 1px solid #364f6b;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+.servcies-item a:hover {
+    background: #364f6b;
+    color: #eaeaea;
+}
+/* adventure section */
+#adventure {
+    text-align: center;
+    background-image: linear-gradient(110.1deg, rgba(241,115,30,1) 18.9%, rgba(231,29,54,1) 90.7%);
+    padding: 40px 0;
+    color: #fef6fb;
+}
+.adventure-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.adventure-item {
+    width: 45%;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background: #f9f7f7;
+    color: black;
+    transition: 0.4s ease-in-out;
+    margin: 10px;
+}
+.adventure-item:hover {
+    margin-top: -5px;
+    box-shadow: 1px 0.5px 15px 1px #364f6b;
+}
+.adventure-item:nth-child(1),
+.adventure-item:nth-child(4) {
+    padding: 70px;
+}
+.adventure-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: #111d5e;
+    border: 1px solid #111d5e;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+.adventure-item a:hover {
+    color: #eaeaea;
+    background: #111d5e;
+}
+footer{
+    padding: 20px 0;
+    text-align: center;
+    background: #367591;
+    color:#fef6fb;
+    font-size: 1.2em;
+}
+@keyframes nav{
+    0%{
+        transform: translateY(-130px);
+        }
+    100%{
+        transform: rotate(xx) translateY(0);
+        }
+}
+@keyframes header{
+    0%{
+        transform: translateX(-600px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+
+/*for screen less than 900px*/
+@media screen and (max-width:900px) {
+    .about-application-item {
+        width: 50%;
+    }
+    .servcies-item {
+        width: 100%;
+    }
+    .adventure-item:nth-child(1),
+    .adventure-item:nth-child(4) {
+        padding: 40px;
+    }
+    .adventure-item {
+        width: 100%;
+    }
+}
+/*for screen less than 768px*/
+@media screen and (max-width:768px) {
+    .navigation {
+        display: none;
+    }
+    .about-application-item {
+        width: 100%;
+    }
+}
