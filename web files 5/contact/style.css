@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto';
+}
+.line{
+    background: white;
+    height:5px;
+    width:70px;
+}
+nav{
+    background: black;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+nav ul li a.active{
+    background: rgb(236, 162, 23); 
+}
+nav ul li a:hover{
+    background: rgb(236, 162, 23);
+}
+main{
+    padding: 10vh;
+    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
+    color:rgb(255, 255, 255);
+}
+main ul {
+    line-height: 90px;
+    list-style: none;
+}
+main ul li{
+    font-size: 20px;
+}
+main ul li a{
+    font-size: 30px;
+    color:white;
+    padding: 10px;
+    background:black;
+    border-radius:  50% 20%;
+}
+main ul li {
+    font-size: 20px
+}
+
+@media screen and (max-width: 600px){
+    main{
+        padding: 50px 20px;
+    }
+}
