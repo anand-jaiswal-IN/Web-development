@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, Josefin Sans;
+}
+nav{
+    padding: 10px 0;
+    background:linear-gradient(-120deg, #2874A6, #303F9F);
+    display: flex;
+    justify-content: space-around;
+    animation: nav-animation 0.5s 1 0s ease-in-out;
+}
+nav img{
+    animation: nav-img-animation 0.5s 1 0.2s ease-in-out;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    animation: nav-ul-animation 0.5s 1 0.2s ease-in-out;
+}
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color:white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+nav ul li a:hover, .active{
+    background: #E53935;
+}
+main{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color:rgb(238, 237, 237);
+    width: 100%;
+    display: flex;
+}
+.left-main{
+    width:50%;
+    padding: 30px 20px;
+    animation: left-main-animation 1s 1 0s ease-in-out;
+}
+.left-main a{
+    text-decoration: none;
+    background: #2874A6;
+    color:white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.left-main a:hover{
+    background: rgb(238, 237, 237);
+    color:rgb(0, 0, 0);
+}
+
+.right-main{
+    width:50%;
+    padding: 30px 20px;
+    display: flex;
+    animation: right-main-animation 1s 1 0s ease-in-out;
+}
+.login-form{
+    line-height: 3em;
+    width:50%;
+}
+.login-form input[type="text"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.login-form input[type="password"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.login-form input[type="submit"]{
+    border:none;
+    margin-top:20px;
+    font-size: 16px;
+    padding:10px 15px;
+    border-radius: 50px;
+    background: #2874A6;
+    color:white;
+    transition: 0.3s;
+}
+.login-form input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(238, 237, 237);
+    color:rgb(0, 0, 0);
+}
+
+.signup-form{
+    line-height: 3em;
+    width: 50%;
+}
+.signup-form input[type="text"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.signup-form input[type="password"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.signup-form input[type="email"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.signup-form input[type="number"]{
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+}
+.signup-form input[type="submit"]{
+    border:none;
+    margin-top:20px;
+    font-size: 16px;
+    padding:10px 15px;
+    border-radius: 50px;
+    background: #2874A6;
+    color:white;
+    transition: 0.3s;
+}
+.signup-form input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(238, 237, 237);
+    color:rgb(0, 0, 0);
+}
+@keyframes nav-animation{
+    0%{
+        transform: translateY(-150px);
+        }
+    50%{
+        transform: rotate(xx) translateX(-75) translateY(0);
+        }
+    100%{
+        transform: rotate(xx) translateY(0);
+        }
+}
+
+@keyframes nav-img-animation{
+    0%{
+        transform: translateX(-200px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+
+@keyframes nav-ul-animation{
+    0%{
+        transform: translateX(200px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+
+@keyframes left-main-animation{
+    0%{
+        transform: translateX(-300px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
+@keyframes right-main-animation{
+    0%{
+        transform: translateX(300px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0);
+        }
+}
