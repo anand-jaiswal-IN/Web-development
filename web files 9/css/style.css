@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: Arial, Helvetica, sans-serif; background-color: #3c4042; color: #fff;}
+a{text-decoration: none;}
+h1{margin: 0 0 0 20px;}
+#line{
+    height: 6px;
+    width: 200px;
+    background-color: #3eb4a7;
+    margin: 10px 0 0 20px;
+}
+#nav-bar{
+    height: 15vh;
+    box-shadow: 10px 0px 5px #888888;
+    background-color: #3c4042;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav-menus{
+    
+}
+#nav-menus > ul{
+    list-style-type: none;
+    /* display: flex; */
+
+}
+#nav-menus > ul>li>a, #nav-menus > ul>li>button{
+    color: #fff;
+    /* display: inline-block; */
+    background : none;
+    outline: none;
+    border: none;
+    padding: 6vh 20px;
+    transition: 0.2s ease-in-out;
+}
+#nav-menus > ul>li>a:hover, #nav-menus > ul>li>button:hover{
+    background-color: #3eb4a7;
+    cursor: pointer;
+}
+#header-content{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../img/header-background.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+#header-content> #header-btn > a{
+    color: white;
+    padding: 15px 20px;
+    border: 2px solid #3eb4a7;
+    transition: 0.2s ease-in-out;
+}
+#header-btn{
+	padding-top : 25px;
+}
+#header-content> #header-btn > a:nth-child(1):hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid #fff;
+}
+#header-content> #header-btn > a:nth-child(2):hover{
+    background-color: #3eb4a7;
+}
+
+#places-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#places-items{
+    border: 2px solid #3eb4a7;
+    text-align: center;
+    width: 33.33%;
+    padding-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}
+#places-items>p{
+    text-align: justify;
+    margin: 0 30px;
+}
+#places-items:hover{
+    cursor: pointer;
+    background-color: #3eb4a7;
+}
